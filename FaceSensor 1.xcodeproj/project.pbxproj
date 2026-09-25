@@ -1,0 +1,872 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5332BF302139E1F900C77470 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332BF2F2139E1F900C77470 /* AppDelegate.swift */; };
+		5332BF322139E1F900C77470 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332BF312139E1F900C77470 /* ViewController.swift */; };
+		5332BF352139E1F900C77470 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5332BF332139E1F900C77470 /* Main.storyboard */; };
+		5332BF372139E20100C77470 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5332BF362139E20100C77470 /* Assets.xcassets */; };
+		5332BF3A2139E20100C77470 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5332BF382139E20100C77470 /* LaunchScreen.storyboard */; };
+		5332BF452139E20100C77470 /* FaceSensor_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332BF442139E20100C77470 /* FaceSensor_1Tests.swift */; };
+		5332BF502139E20100C77470 /* FaceSensor_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332BF4F2139E20100C77470 /* FaceSensor_1UITests.swift */; };
+		5332BF552139E20100C77470 /* FaceSensor 1 WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5332BF542139E20100C77470 /* FaceSensor 1 WatchKit App.app */; };
+		5332BF5B2139E20100C77470 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5332BF592139E20100C77470 /* Interface.storyboard */; };
+		5332BF5D2139E20200C77470 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5332BF5C2139E20200C77470 /* Assets.xcassets */; };
+		5332BF642139E20200C77470 /* FaceSensor 1 WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5332BF632139E20200C77470 /* FaceSensor 1 WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5332BF692139E20200C77470 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332BF682139E20200C77470 /* InterfaceController.swift */; };
+		5332BF6B2139E20200C77470 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332BF6A2139E20200C77470 /* ExtensionDelegate.swift */; };
+		5332BF6D2139E20200C77470 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332BF6C2139E20200C77470 /* NotificationController.swift */; };
+		5332BF6F2139E20300C77470 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5332BF6E2139E20300C77470 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5332BF412139E20100C77470 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5332BF242139E1F900C77470 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5332BF2B2139E1F900C77470;
+			remoteInfo = "FaceSensor 1";
+		};
+		5332BF4C2139E20100C77470 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5332BF242139E1F900C77470 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5332BF2B2139E1F900C77470;
+			remoteInfo = "FaceSensor 1";
+		};
+		5332BF562139E20100C77470 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5332BF242139E1F900C77470 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5332BF532139E20100C77470;
+			remoteInfo = "FaceSensor 1 WatchKit App";
+		};
+		5332BF652139E20200C77470 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5332BF242139E1F900C77470 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5332BF622139E20200C77470;
+			remoteInfo = "FaceSensor 1 WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5332BF772139E20300C77470 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5332BF642139E20200C77470 /* FaceSensor 1 WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5332BF7B2139E20300C77470 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				5332BF552139E20100C77470 /* FaceSensor 1 WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5332BF2C2139E1F900C77470 /* FaceSensor 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FaceSensor 1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5332BF2F2139E1F900C77470 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5332BF312139E1F900C77470 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5332BF342139E1F900C77470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5332BF362139E20100C77470 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5332BF392139E20100C77470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5332BF3B2139E20100C77470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5332BF402139E20100C77470 /* FaceSensor 1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FaceSensor 1Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5332BF442139E20100C77470 /* FaceSensor_1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceSensor_1Tests.swift; sourceTree = "<group>"; };
+		5332BF462139E20100C77470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5332BF4B2139E20100C77470 /* FaceSensor 1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FaceSensor 1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5332BF4F2139E20100C77470 /* FaceSensor_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceSensor_1UITests.swift; sourceTree = "<group>"; };
+		5332BF512139E20100C77470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5332BF542139E20100C77470 /* FaceSensor 1 WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FaceSensor 1 WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5332BF5A2139E20100C77470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		5332BF5C2139E20200C77470 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5332BF5E2139E20200C77470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5332BF632139E20200C77470 /* FaceSensor 1 WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FaceSensor 1 WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5332BF682139E20200C77470 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		5332BF6A2139E20200C77470 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		5332BF6C2139E20200C77470 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		5332BF6E2139E20300C77470 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5332BF702139E20300C77470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5332BF712139E20300C77470 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5332BF292139E1F900C77470 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5332BF3D2139E20100C77470 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5332BF482139E20100C77470 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5332BF602139E20200C77470 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5332BF232139E1F900C77470 = {
+			isa = PBXGroup;
+			children = (
+				5332BF2E2139E1F900C77470 /* FaceSensor 1 */,
+				5332BF432139E20100C77470 /* FaceSensor 1Tests */,
+				5332BF4E2139E20100C77470 /* FaceSensor 1UITests */,
+				5332BF582139E20100C77470 /* FaceSensor 1 WatchKit App */,
+				5332BF672139E20200C77470 /* FaceSensor 1 WatchKit Extension */,
+				5332BF2D2139E1F900C77470 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5332BF2D2139E1F900C77470 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5332BF2C2139E1F900C77470 /* FaceSensor 1.app */,
+				5332BF402139E20100C77470 /* FaceSensor 1Tests.xctest */,
+				5332BF4B2139E20100C77470 /* FaceSensor 1UITests.xctest */,
+				5332BF542139E20100C77470 /* FaceSensor 1 WatchKit App.app */,
+				5332BF632139E20200C77470 /* FaceSensor 1 WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5332BF2E2139E1F900C77470 /* FaceSensor 1 */ = {
+			isa = PBXGroup;
+			children = (
+				5332BF2F2139E1F900C77470 /* AppDelegate.swift */,
+				5332BF312139E1F900C77470 /* ViewController.swift */,
+				5332BF332139E1F900C77470 /* Main.storyboard */,
+				5332BF362139E20100C77470 /* Assets.xcassets */,
+				5332BF382139E20100C77470 /* LaunchScreen.storyboard */,
+				5332BF3B2139E20100C77470 /* Info.plist */,
+			);
+			path = "FaceSensor 1";
+			sourceTree = "<group>";
+		};
+		5332BF432139E20100C77470 /* FaceSensor 1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5332BF442139E20100C77470 /* FaceSensor_1Tests.swift */,
+				5332BF462139E20100C77470 /* Info.plist */,
+			);
+			path = "FaceSensor 1Tests";
+			sourceTree = "<group>";
+		};
+		5332BF4E2139E20100C77470 /* FaceSensor 1UITests */ = {
+			isa = PBXGroup;
+			children = (
+				5332BF4F2139E20100C77470 /* FaceSensor_1UITests.swift */,
+				5332BF512139E20100C77470 /* Info.plist */,
+			);
+			path = "FaceSensor 1UITests";
+			sourceTree = "<group>";
+		};
+		5332BF582139E20100C77470 /* FaceSensor 1 WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				5332BF592139E20100C77470 /* Interface.storyboard */,
+				5332BF5C2139E20200C77470 /* Assets.xcassets */,
+				5332BF5E2139E20200C77470 /* Info.plist */,
+			);
+			path = "FaceSensor 1 WatchKit App";
+			sourceTree = "<group>";
+		};
+		5332BF672139E20200C77470 /* FaceSensor 1 WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5332BF682139E20200C77470 /* InterfaceController.swift */,
+				5332BF6A2139E20200C77470 /* ExtensionDelegate.swift */,
+				5332BF6C2139E20200C77470 /* NotificationController.swift */,
+				5332BF6E2139E20300C77470 /* Assets.xcassets */,
+				5332BF702139E20300C77470 /* Info.plist */,
+				5332BF712139E20300C77470 /* PushNotificationPayload.apns */,
+			);
+			path = "FaceSensor 1 WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5332BF2B2139E1F900C77470 /* FaceSensor 1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5332BF7C2139E20300C77470 /* Build configuration list for PBXNativeTarget "FaceSensor 1" */;
+			buildPhases = (
+				5332BF282139E1F900C77470 /* Sources */,
+				5332BF292139E1F900C77470 /* Frameworks */,
+				5332BF2A2139E1F900C77470 /* Resources */,
+				5332BF7B2139E20300C77470 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5332BF572139E20100C77470 /* PBXTargetDependency */,
+			);
+			name = "FaceSensor 1";
+			productName = "FaceSensor 1";
+			productReference = 5332BF2C2139E1F900C77470 /* FaceSensor 1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5332BF3F2139E20100C77470 /* FaceSensor 1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5332BF7F2139E20300C77470 /* Build configuration list for PBXNativeTarget "FaceSensor 1Tests" */;
+			buildPhases = (
+				5332BF3C2139E20100C77470 /* Sources */,
+				5332BF3D2139E20100C77470 /* Frameworks */,
+				5332BF3E2139E20100C77470 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5332BF422139E20100C77470 /* PBXTargetDependency */,
+			);
+			name = "FaceSensor 1Tests";
+			productName = "FaceSensor 1Tests";
+			productReference = 5332BF402139E20100C77470 /* FaceSensor 1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5332BF4A2139E20100C77470 /* FaceSensor 1UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5332BF822139E20400C77470 /* Build configuration list for PBXNativeTarget "FaceSensor 1UITests" */;
+			buildPhases = (
+				5332BF472139E20100C77470 /* Sources */,
+				5332BF482139E20100C77470 /* Frameworks */,
+				5332BF492139E20100C77470 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5332BF4D2139E20100C77470 /* PBXTargetDependency */,
+			);
+			name = "FaceSensor 1UITests";
+			productName = "FaceSensor 1UITests";
+			productReference = 5332BF4B2139E20100C77470 /* FaceSensor 1UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		5332BF532139E20100C77470 /* FaceSensor 1 WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5332BF782139E20300C77470 /* Build configuration list for PBXNativeTarget "FaceSensor 1 WatchKit App" */;
+			buildPhases = (
+				5332BF522139E20100C77470 /* Resources */,
+				5332BF772139E20300C77470 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5332BF662139E20200C77470 /* PBXTargetDependency */,
+			);
+			name = "FaceSensor 1 WatchKit App";
+			productName = "FaceSensor 1 WatchKit App";
+			productReference = 5332BF542139E20100C77470 /* FaceSensor 1 WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		5332BF622139E20200C77470 /* FaceSensor 1 WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5332BF742139E20300C77470 /* Build configuration list for PBXNativeTarget "FaceSensor 1 WatchKit Extension" */;
+			buildPhases = (
+				5332BF5F2139E20200C77470 /* Sources */,
+				5332BF602139E20200C77470 /* Frameworks */,
+				5332BF612139E20200C77470 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FaceSensor 1 WatchKit Extension";
+			productName = "FaceSensor 1 WatchKit Extension";
+			productReference = 5332BF632139E20200C77470 /* FaceSensor 1 WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5332BF242139E1F900C77470 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "VICTOR J. DEUTSCH";
+				TargetAttributes = {
+					5332BF2B2139E1F900C77470 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
+					};
+					5332BF3F2139E20100C77470 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 5332BF2B2139E1F900C77470;
+					};
+					5332BF4A2139E20100C77470 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 5332BF2B2139E1F900C77470;
+					};
+					5332BF532139E20100C77470 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					5332BF622139E20200C77470 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
+					};
+				};
+			};
+			buildConfigurationList = 5332BF272139E1F900C77470 /* Build configuration list for PBXProject "FaceSensor 1" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5332BF232139E1F900C77470;
+			productRefGroup = 5332BF2D2139E1F900C77470 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5332BF2B2139E1F900C77470 /* FaceSensor 1 */,
+				5332BF3F2139E20100C77470 /* FaceSensor 1Tests */,
+				5332BF4A2139E20100C77470 /* FaceSensor 1UITests */,
+				5332BF532139E20100C77470 /* FaceSensor 1 WatchKit App */,
+				5332BF622139E20200C77470 /* FaceSensor 1 WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5332BF2A2139E1F900C77470 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5332BF3A2139E20100C77470 /* LaunchScreen.storyboard in Resources */,
+				5332BF372139E20100C77470 /* Assets.xcassets in Resources */,
+				5332BF352139E1F900C77470 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5332BF3E2139E20100C77470 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5332BF492139E20100C77470 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5332BF522139E20100C77470 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5332BF5D2139E20200C77470 /* Assets.xcassets in Resources */,
+				5332BF5B2139E20100C77470 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5332BF612139E20200C77470 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5332BF6F2139E20300C77470 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5332BF282139E1F900C77470 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5332BF322139E1F900C77470 /* ViewController.swift in Sources */,
+				5332BF302139E1F900C77470 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5332BF3C2139E20100C77470 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5332BF452139E20100C77470 /* FaceSensor_1Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5332BF472139E20100C77470 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5332BF502139E20100C77470 /* FaceSensor_1UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5332BF5F2139E20200C77470 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5332BF6D2139E20200C77470 /* NotificationController.swift in Sources */,
+				5332BF6B2139E20200C77470 /* ExtensionDelegate.swift in Sources */,
+				5332BF692139E20200C77470 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5332BF422139E20100C77470 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5332BF2B2139E1F900C77470 /* FaceSensor 1 */;
+			targetProxy = 5332BF412139E20100C77470 /* PBXContainerItemProxy */;
+		};
+		5332BF4D2139E20100C77470 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5332BF2B2139E1F900C77470 /* FaceSensor 1 */;
+			targetProxy = 5332BF4C2139E20100C77470 /* PBXContainerItemProxy */;
+		};
+		5332BF572139E20100C77470 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5332BF532139E20100C77470 /* FaceSensor 1 WatchKit App */;
+			targetProxy = 5332BF562139E20100C77470 /* PBXContainerItemProxy */;
+		};
+		5332BF662139E20200C77470 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5332BF622139E20200C77470 /* FaceSensor 1 WatchKit Extension */;
+			targetProxy = 5332BF652139E20200C77470 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5332BF332139E1F900C77470 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5332BF342139E1F900C77470 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5332BF382139E20100C77470 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5332BF392139E20100C77470 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5332BF592139E20100C77470 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5332BF5A2139E20100C77470 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5332BF722139E20300C77470 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5332BF732139E20300C77470 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5332BF752139E20300C77470 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJLN8BVUU9;
+				INFOPLIST_FILE = "FaceSensor 1 WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deutschtechnologycorp.FaceSensor-1.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		5332BF762139E20300C77470 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJLN8BVUU9;
+				INFOPLIST_FILE = "FaceSensor 1 WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deutschtechnologycorp.FaceSensor-1.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		5332BF792139E20300C77470 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJLN8BVUU9;
+				IBSC_MODULE = FaceSensor_1_WatchKit_Extension;
+				INFOPLIST_FILE = "FaceSensor 1 WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deutschtechnologycorp.FaceSensor-1.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		5332BF7A2139E20300C77470 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJLN8BVUU9;
+				IBSC_MODULE = FaceSensor_1_WatchKit_Extension;
+				INFOPLIST_FILE = "FaceSensor 1 WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deutschtechnologycorp.FaceSensor-1.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		5332BF7D2139E20300C77470 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJLN8BVUU9;
+				INFOPLIST_FILE = "FaceSensor 1/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deutschtechnologycorp.FaceSensor-1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5332BF7E2139E20300C77470 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJLN8BVUU9;
+				INFOPLIST_FILE = "FaceSensor 1/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deutschtechnologycorp.FaceSensor-1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		5332BF802139E20300C77470 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJLN8BVUU9;
+				INFOPLIST_FILE = "FaceSensor 1Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deutschtechnologycorp.FaceSensor-1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FaceSensor 1.app/FaceSensor 1";
+			};
+			name = Debug;
+		};
+		5332BF812139E20300C77470 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJLN8BVUU9;
+				INFOPLIST_FILE = "FaceSensor 1Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deutschtechnologycorp.FaceSensor-1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FaceSensor 1.app/FaceSensor 1";
+			};
+			name = Release;
+		};
+		5332BF832139E20400C77470 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJLN8BVUU9;
+				INFOPLIST_FILE = "FaceSensor 1UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deutschtechnologycorp.FaceSensor-1UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "FaceSensor 1";
+			};
+			name = Debug;
+		};
+		5332BF842139E20400C77470 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJLN8BVUU9;
+				INFOPLIST_FILE = "FaceSensor 1UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deutschtechnologycorp.FaceSensor-1UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "FaceSensor 1";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5332BF272139E1F900C77470 /* Build configuration list for PBXProject "FaceSensor 1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5332BF722139E20300C77470 /* Debug */,
+				5332BF732139E20300C77470 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5332BF742139E20300C77470 /* Build configuration list for PBXNativeTarget "FaceSensor 1 WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5332BF752139E20300C77470 /* Debug */,
+				5332BF762139E20300C77470 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5332BF782139E20300C77470 /* Build configuration list for PBXNativeTarget "FaceSensor 1 WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5332BF792139E20300C77470 /* Debug */,
+				5332BF7A2139E20300C77470 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5332BF7C2139E20300C77470 /* Build configuration list for PBXNativeTarget "FaceSensor 1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5332BF7D2139E20300C77470 /* Debug */,
+				5332BF7E2139E20300C77470 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5332BF7F2139E20300C77470 /* Build configuration list for PBXNativeTarget "FaceSensor 1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5332BF802139E20300C77470 /* Debug */,
+				5332BF812139E20300C77470 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5332BF822139E20400C77470 /* Build configuration list for PBXNativeTarget "FaceSensor 1UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5332BF832139E20400C77470 /* Debug */,
+				5332BF842139E20400C77470 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5332BF242139E1F900C77470 /* Project object */;
+}
