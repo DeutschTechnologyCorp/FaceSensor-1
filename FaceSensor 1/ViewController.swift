@@ -95,7 +95,6 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     }
     func handleFaces(request: VNRequest, error: Error?) {
         guard let result = (request.results as? [VNFaceObservation])?.first else { return }
-        Thread.sleep(forTimeInterval:1.2)
         DispatchQueue.main.sync {
             self.imageView.transform = CGAffineTransform.identity
             let bb = result.boundingBox
@@ -357,7 +356,8 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                                 } else {return}
             }
         }
-        // Wait out the double (left) or triple (right) click before looking at the next frame, as the 2018 sleeps did.
-        Thread.sleep(forTimeInterval: result.boundingBox.midX < 0.3 ? 0.2 : result.boundingBox.midX > 0.7 ? 0.34 : 0)
+        // Pause after the clicks, so each cycle reports the face where it is now, not where it was 1.2 s ago.
+        // The extra 0.2 s (left) or 0.34 s (right) waits out the double or triple click.
+        Thread.sleep(forTimeInterval: 1.2 + (result.boundingBox.midX < 0.3 ? 0.2 : result.boundingBox.midX > 0.7 ? 0.34 : 0))
     }
 }
