@@ -34,7 +34,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Uee-0j-aNJ" firstAttribute="bottom" secondItem="xhA-sd-qr5" secondAttribute="bottom" constant="627" id="9GD-dJ-b0B"/>
+                            <constraint firstItem="xhA-sd-qr5" firstAttribute="top" secondItem="Uee-0j-aNJ" secondAttribute="top" constant="68" id="9GD-dJ-b0B"/>
                             <constraint firstItem="xhA-sd-qr5" firstAttribute="baseline" secondItem="z3I-sb-FuV" secondAttribute="baseline" id="TVt-ce-TNA"/>
                             <constraint firstItem="xhA-sd-qr5" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="vQE-Q5-xaR"/>
                             <constraint firstItem="z3I-sb-FuV" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" constant="26" id="vpp-6N-H0V"/>

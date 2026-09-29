@@ -42,6 +42,8 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         imageView.center = CGPoint(x: 210, y: 350)
         view.tintColor = UIColor.red
         view.addSubview(imageView)
+        view.bringSubviewToFront(lLabel)
+        view.bringSubviewToFront(rLabel)
         func sendWatchMessage() {
             return
         }
@@ -56,6 +58,14 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
             session.delegate = self
             session.activate()
         }
+    }
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        guard let imageView = imageView else { return }
+        // Keeps the 2018 iPhone 8 Plus proportions (a 341 pt logo on a 414 pt screen) on every iPhone.
+        let side = view.bounds.width * 341.0 / 414.0
+        imageView.bounds = CGRect(x: 0, y: 0, width: side, height: side)
+        imageView.center = CGPoint(x: view.bounds.midX, y: view.bounds.midY)
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
