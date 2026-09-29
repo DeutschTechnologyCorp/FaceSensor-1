@@ -21,6 +21,8 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     var imageView: UIImageView!
     var currentAnimation = 0
     var counter = 0
+    var watchCycle = 0
+    let watchLaunch = UUID().uuidString
     var captureSession = AVCaptureSession()
     var sessionOutput = AVCaptureVideoDataOutput()
     let cameraPosition = AVCaptureDevice.Position.back
@@ -98,6 +100,15 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         DispatchQueue.main.sync {
             self.imageView.transform = CGAffineTransform.identity
             let bb = result.boundingBox
+            // The watch pulses its logo to the same size as this screen's. Each message
+            // still taps the wrist once; all messages of one reading (1 centre, 2 left, 4 right) share
+            // a cycle number, and the launch id tells the watch when this app has restarted.
+            self.watchCycle += 1
+            let watchMessage: [String: Any] = [
+                "launch": self.watchLaunch,
+                "cycle": self.watchCycle,
+                "scale": bb.width >= 0.22 ? 1.2 : bb.width > 0.10 ? 0.7 : 0.4
+            ]
     //Left Sector
             if bb.midX < 0.3 {
                 self.rLabel.isHidden = true
@@ -114,7 +125,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                                     }
                     })
                     if (WCSession.default.isReachable) {
-                        let message = ["": ""]
+                        let message = watchMessage
                         WCSession.default.sendMessage(message, replyHandler:
                             nil)
                         Thread.sleep(forTimeInterval: 0.2)
@@ -141,7 +152,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                                         }
                         })
                         if (WCSession.default.isReachable) {
-                            let message = ["": ""]
+                            let message = watchMessage
                             WCSession.default.sendMessage(message, replyHandler:
                                 nil)
                             Thread.sleep(forTimeInterval: 0.2)
@@ -167,7 +178,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                                             }
                             })
                             if (WCSession.default.isReachable) {
-                                let message = ["": ""]
+                                let message = watchMessage
                                 WCSession.default.sendMessage(message, replyHandler:
                                     nil)
                            
@@ -199,7 +210,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                                         }
                         })
                         if (WCSession.default.isReachable) {
-                            let message = ["": ""]
+                            let message = watchMessage
                             WCSession.default.sendMessage(message, replyHandler:
                                 nil)
                         }
@@ -219,7 +230,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                                             }
                             })
                             if (WCSession.default.isReachable) {
-                                let message = ["": ""]
+                                let message = watchMessage
                                 WCSession.default.sendMessage(message, replyHandler:
                                     nil)
                             }
@@ -239,7 +250,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                                                 }
                                 })
                                 if (WCSession.default.isReachable) {
-                                    let message = ["": ""]
+                                    let message = watchMessage
                                     WCSession.default.sendMessage(message, replyHandler:
                                         nil)
                                 }
@@ -265,7 +276,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                                             }
                             })
                             if (WCSession.default.isReachable) {
-                                let message = ["": ""]
+                                let message = watchMessage
                                 WCSession.default.sendMessage(message, replyHandler:
                                     nil)
                                 Thread.sleep(forTimeInterval: 0.17)
@@ -298,7 +309,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                                                 }
                                 })
                                 if (WCSession.default.isReachable) {
-                                    let message = ["": ""]
+                                    let message = watchMessage
                                     WCSession.default.sendMessage(message, replyHandler:
                                         nil)
                                     Thread.sleep(forTimeInterval:0.17)
@@ -332,7 +343,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                                                     }
                                     })
                                     if (WCSession.default.isReachable) {
-                                        let message = ["": ""]
+                                        let message = watchMessage
                                         WCSession.default.sendMessage(message, replyHandler:
                                             nil)
                                         Thread.sleep(forTimeInterval:0.17)
