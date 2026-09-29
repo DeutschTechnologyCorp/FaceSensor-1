@@ -78,6 +78,9 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         rLabel.isHidden = true
         lLabel.isHidden = true
         let faceDetectionRequest = VNDetectFaceRectanglesRequest(completionHandler: self.handleFaces)
+        // Built against a newer SDK, Vision would default to a newer face detector
+        // whose boxes are sized differently; the 2018 build used revision 2, so keep it.
+        faceDetectionRequest.revision = VNDetectFaceRectanglesRequestRevision2
         self.requests = [faceDetectionRequest];
     }
     func handleFaces(request: VNRequest, error: Error?) {
