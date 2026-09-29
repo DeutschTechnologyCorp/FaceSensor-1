@@ -94,9 +94,9 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         self.requests = [faceDetectionRequest];
     }
     func handleFaces(request: VNRequest, error: Error?) {
-        DispatchQueue.main.async {
-            guard let result = (request.results as? [VNFaceObservation])?.first else { return }
-            Thread.sleep(forTimeInterval:1.2)
+        guard let result = (request.results as? [VNFaceObservation])?.first else { return }
+        Thread.sleep(forTimeInterval:1.2)
+        DispatchQueue.main.sync {
             self.imageView.transform = CGAffineTransform.identity
             let bb = result.boundingBox
     //Left Sector
@@ -124,10 +124,10 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                     let generator = UIImpactFeedbackGenerator(style: .heavy)
                     generator.prepare()
                     generator.impactOccurred()
-                    Thread.sleep(forTimeInterval: 0.2)
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
                     _ = UIImpactFeedbackGenerator(style: .heavy)
                     generator.prepare()
-                    generator.impactOccurred()
+                    generator.impactOccurred() }
               } else
                     if bb.width > 0.10 && bb.width < 0.22 {
                         self.imageView.transform = CGAffineTransform(scaleX: 0.7, y: 0.7)
@@ -151,10 +151,10 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                         let generator = UIImpactFeedbackGenerator(style: .medium)
                         generator.prepare()
                         generator.impactOccurred()
-                        Thread.sleep(forTimeInterval: 0.2)
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
                         _ = UIImpactFeedbackGenerator(style: .medium)
                         generator.prepare()
-                        generator.impactOccurred()
+                        generator.impactOccurred() }
                 } else
                         if bb.width <= 0.10 {
                             self.imageView.transform = CGAffineTransform.identity
@@ -178,10 +178,10 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                             let generator = UIImpactFeedbackGenerator(style: .light)
                             generator.prepare()
                             generator.impactOccurred()
-                            Thread.sleep(forTimeInterval: 0.2)
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
                             _ = UIImpactFeedbackGenerator(style: .light)
                             generator.prepare()
-                            generator.impactOccurred()
+                            generator.impactOccurred() }
                    } else {return}
             } else
 // sector - middle
@@ -279,14 +279,14 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                             let generator = UIImpactFeedbackGenerator(style: .heavy)
                             generator.prepare()
                             generator.impactOccurred()
-                            Thread.sleep(forTimeInterval: 0.17)
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.17) {
                             _ = UIImpactFeedbackGenerator(style: .heavy)
                             generator.prepare()
                             generator.impactOccurred()
-                            Thread.sleep(forTimeInterval: 0.17)
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.17) {
                             _ = UIImpactFeedbackGenerator(style: .heavy)
                             generator.prepare()
-                            generator.impactOccurred()
+                            generator.impactOccurred() }}
 } else
                             if bb.width > 0.10 && bb.width < 0.22 {
                                 UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 5, options: [],
@@ -312,14 +312,14 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                                 let generator = UIImpactFeedbackGenerator(style: .medium)
                                 generator.prepare()
                                 generator.impactOccurred()
-                                Thread.sleep(forTimeInterval: 0.17)
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.17) {
                                 _ = UIImpactFeedbackGenerator(style: .medium)
                                 generator.prepare()
                                 generator.impactOccurred()
-                                Thread.sleep(forTimeInterval: 0.17)
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.17) {
                                 _ = UIImpactFeedbackGenerator(style: .medium)
                                 generator.prepare()
-                                generator.impactOccurred()
+                                generator.impactOccurred() }}
                             } else
                                 if bb.width <= 0.10 {
                                     self.imageView.transform = CGAffineTransform.identity
@@ -346,16 +346,18 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                                     let generator = UIImpactFeedbackGenerator(style: .light)
                                     generator.prepare()
                                     generator.impactOccurred()
-                                    Thread.sleep(forTimeInterval: 0.17)
+                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.17) {
                                     _ = UIImpactFeedbackGenerator(style: .light)
                                     generator.prepare()
                                     generator.impactOccurred()
-                                    Thread.sleep(forTimeInterval: 0.17)
+                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.17) {
                                     _ = UIImpactFeedbackGenerator(style: .light)
                                     generator.prepare()
-                                    generator.impactOccurred()
+                                    generator.impactOccurred() }}
                                 } else {return}
             }
         }
+        // Wait out the double (left) or triple (right) click before looking at the next frame, as the 2018 sleeps did.
+        Thread.sleep(forTimeInterval: result.boundingBox.midX < 0.3 ? 0.2 : result.boundingBox.midX > 0.7 ? 0.34 : 0)
     }
 }
